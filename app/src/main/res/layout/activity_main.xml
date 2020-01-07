@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#28FFFFFF">
+
+    <TextView
+        android:id="@+id/tvVlaga"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvImeGrada"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvImeGrada"
+        app:layout_constraintTop_toBottomOf="@+id/tvImeGrada" />
+
+    <TextView
+        android:id="@+id/tvOsjecaj"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvImeGrada"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvImeGrada"
+        app:layout_constraintTop_toBottomOf="@+id/tvImeGrada" />
+
+    <TextView
+        android:id="@+id/tvTlak"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvImeGrada"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvImeGrada"
+        app:layout_constraintTop_toBottomOf="@+id/tvImeGrada" />
+
+    <EditText
+        android:id="@+id/etUnos"
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:elegantTextHeight="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="@string/unesi_grad"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTrazi"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#28FFFFFF"
+        android:contentDescription="@android:string/search_go"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toEndOf="@+id/etUnos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/tvImeGrada"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTrazi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etUnos"
+        app:layout_constraintTop_toBottomOf="@+id/etUnos" />
+
+    <TextView
+        android:id="@+id/tvTrenutnaTemp"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvImeGrada"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvImeGrada"
+        app:layout_constraintTop_toBottomOf="@+id/tvImeGrada" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
